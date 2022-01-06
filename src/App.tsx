@@ -1,11 +1,19 @@
 import React from "react";
 import "./App.css";
-import { Button } from "./Components";
+import {
+  AddButton,
+  ClearAllButton,
+  DeleteButton,
+  EditButton,
+} from "./Components";
 
 function App() {
   return (
     <div className="App">
-      <Button>Button</Button>
+      <AddButton />
+      <ClearAllButton />
+      <DeleteButton />
+      <EditButton />
     </div>
   );
 }
