@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { ClearIcon } from "./Components";
+import { Button } from "./Components";
 
 function App() {
   return (
     <div className="App">
-      <ClearIcon />
+      <Button>Button</Button>
     </div>
   );
 }
