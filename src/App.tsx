@@ -1,10 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Icon } from "./Components";
+import { Android } from "@styled-icons/boxicons-logos/Android";
 
 function App() {
   return (
     <div className="App">
-      <p className='text-3xl font-bold underline'>Hello World</p>
+      <Icon>
+        <Android />
+      </Icon>
     </div>
   );
 }
