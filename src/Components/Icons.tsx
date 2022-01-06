@@ -5,7 +5,7 @@ import { Edit } from "@styled-icons/fluentui-system-filled/Edit";
 import { ClearAll } from "@styled-icons/material-rounded/ClearAll";
 
 export const Icon: React.FC = ({ ...props }) => {
-  return <div className="w-14">{props.children}</div>;
+  return <div className="w-5">{props.children}</div>;
 };
 
 export const AddIcon: React.FC = () => {
