@@ -1,19 +1,11 @@
 import React from "react";
 import "./App.css";
-import {
-  AddButton,
-  ClearAllButton,
-  DeleteButton,
-  EditButton,
-} from "./Components";
+import { TextField } from "./Components";
 
 function App() {
   return (
     <div className="App">
-      <AddButton onClick={() => null} />
-      <ClearAllButton onClick={() => null} />
-      <DeleteButton onClick={() => null} />
-      <EditButton onClick={() => null} />
+      <TextField />
     </div>
   );
 }
