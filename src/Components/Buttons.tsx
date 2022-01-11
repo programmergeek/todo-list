@@ -3,7 +3,10 @@ import { AddIcon, ClearIcon, DeleteIcon, EditIcon } from ".";
 
 export const Button: React.FC = ({ ...props }) => {
   return (
-    <button className="text-base px-5 py-3 w-fit rounded-full shadow-lg">
+    <button
+      className="text-base px-5 py-3 w-fit rounded-full shadow-lg"
+      title="Test"
+    >
       {props.children}
     </button>
   );
