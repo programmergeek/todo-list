@@ -10,10 +10,10 @@ import {
 function App() {
   return (
     <div className="App">
-      <AddButton />
-      <ClearAllButton />
-      <DeleteButton />
-      <EditButton />
+      <AddButton onClick={() => null} />
+      <ClearAllButton onClick={() => null} />
+      <DeleteButton onClick={() => null} />
+      <EditButton onClick={() => null} />
     </div>
   );
 }
