@@ -1,44 +1,53 @@
 import React from "react";
 import { AddIcon, ClearIcon, DeleteIcon, EditIcon } from ".";
 
-export const Button: React.FC = ({ ...props }) => {
+type ButtonProps = {
+  onClick: () => void;
+};
+
+export const Button: React.FC<
+  React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  >
+> = ({ ...props }) => {
   return (
     <button
       className="text-base px-5 py-3 w-fit rounded-full shadow-lg"
-      title="Test"
+      {...props}
     >
       {props.children}
     </button>
   );
 };
 
-export const AddButton: React.FC = () => {
+export const AddButton: React.FC<ButtonProps> = ({ ...props }) => {
   return (
-    <Button>
+    <Button title="Add" onClick={() => props.onClick()}>
       <AddIcon />
     </Button>
   );
 };
 
-export const DeleteButton: React.FC = () => {
+export const DeleteButton: React.FC<ButtonProps> = ({ ...props }) => {
   return (
-    <Button>
+    <Button title="Delete" onClick={() => props.onClick()}>
       <DeleteIcon />
     </Button>
   );
 };
 
-export const EditButton: React.FC = () => {
+export const EditButton: React.FC<ButtonProps> = ({ ...props }) => {
   return (
-    <Button>
+    <Button title="Edit" onClick={() => props.onClick()}>
       <EditIcon />
     </Button>
   );
 };
 
-export const ClearAllButton: React.FC = () => {
+export const ClearAllButton: React.FC<ButtonProps> = ({ ...props }) => {
   return (
-    <Button>
+    <Button title="Clear" onClick={() => props.onClick()}>
       <ClearIcon />
     </Button>
   );
