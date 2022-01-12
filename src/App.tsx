@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
-import { CheckField } from "./Components";
+import { CheckField, ListContext } from "./Components";
+import { contextObj } from "./Components/ListContext";
 
 function App() {
   return (
-    <div className="App">
-      <CheckField />
-    </div>
+    <ListContext.Provider value={contextObj}>
+      <div className="App">
+        <CheckField />
+      </div>
+    </ListContext.Provider>
   );
 }
 
