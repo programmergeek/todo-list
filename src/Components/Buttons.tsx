@@ -13,7 +13,7 @@ export const Button: React.FC<
 > = ({ ...props }) => {
   return (
     <button
-      className="text-base px-5 py-3 w-fit rounded-full shadow-lg"
+      className="text-base px-5 py-3 w-fit rounded-full shadow-lg bg-white"
       {...props}
     >
       {props.children}
