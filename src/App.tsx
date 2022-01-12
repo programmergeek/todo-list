@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import "./App.css";
 import { ListContext } from "./Context";
 import { InputForm } from "./Components/InputForm";
-import { contextObj } from "./Context/ListContext";
 
 function App() {
+  const [list, updateList] = useState<string[]>([]);
+  const value = useMemo(() => ({ list, updateList }), [list]);
   return (
-    <ListContext.Provider value={contextObj}>
+    <ListContext.Provider value={value}>
       <div className="App">
         <InputForm />
       </div>
