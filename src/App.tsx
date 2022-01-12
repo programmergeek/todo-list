@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import { ListContext } from "./Components";
+import { ListContext } from "./Context";
 import { InputForm } from "./Components/InputForm";
-import { contextObj } from "./Components/ListContext";
+import { contextObj } from "./Context/ListContext";
 
 function App() {
   return (
