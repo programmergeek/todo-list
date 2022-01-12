@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { TextField } from "./Components";
+import { CheckField } from "./Components";
 
 function App() {
   return (
     <div className="App">
-      <TextField />
+      <CheckField />
     </div>
   );
 }
