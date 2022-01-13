@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import "./App.css";
 import { ListContext } from "./Context";
 import { InputForm } from "./Components/InputForm";
+import { ToDoItem } from "./Components";
 
 function App() {
   const [list, updateList] = useState<string[]>([]);
@@ -10,6 +11,7 @@ function App() {
     <ListContext.Provider value={value}>
       <div className="App">
         <InputForm />
+        <ToDoItem />
       </div>
     </ListContext.Provider>
   );
