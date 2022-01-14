@@ -12,7 +12,7 @@ export const ToDoItem: React.FC = () => {
 const ToDoRecord: React.FC = () => {
   return (
     <div className="flex justify-center">
-      <div className="flex mr-2 lg:w-1/4 md:w-1/2 w-4/5 rounded-full bg-gray-50 shadow-lg">
+      <div className="flex mr-2 lg:w-2/4 md:w-1/2 w-4/5 rounded-full bg-gray-50 shadow-lg">
         <div className="mt-3 ml-5">
           <CheckField />
         </div>
