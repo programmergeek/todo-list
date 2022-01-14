@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckField, DeleteButton, EditButton } from ".";
+import { CheckField, OptionsButton } from ".";
 
 export const ToDoItem: React.FC = () => {
   return (
@@ -18,8 +18,7 @@ const ToDoRecord: React.FC = () => {
         </div>
       </div>
       <div className="relative hidden sm:flex">
-        <EditButton onClick={() => null} />
-        <DeleteButton onClick={() => null} />
+        <OptionsButton />
       </div>
     </div>
   );
