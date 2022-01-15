@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const CheckField: React.FC = () => {
+export const CheckField: React.FC<{ value: string }> = ({ ...props }) => {
   const [isChecked, updateIsChecked] = useState(false);
 
   return (
@@ -20,7 +20,7 @@ export const CheckField: React.FC = () => {
         onChange={() => null}
       />
       <label htmlFor="test" className="relative cursor-pointer font-sans-serif">
-        This is Sparta
+        {props.value}
       </label>
       <div className="checkmark"></div>
     </div>

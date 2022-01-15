@@ -11,7 +11,7 @@ function App() {
     <ListContext.Provider value={value}>
       <div className="App">
         <InputForm />
-        <ToDoItem />
+        <ToDoItem value="My name is Jeff" />
       </div>
     </ListContext.Provider>
   );
