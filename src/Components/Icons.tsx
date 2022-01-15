@@ -1,7 +1,6 @@
 import React from "react";
 import { Add } from "@styled-icons/fluentui-system-filled/Add";
 import { Delete } from "@styled-icons/fluentui-system-filled/Delete";
-import { Edit } from "@styled-icons/fluentui-system-filled/Edit";
 import { ClearAll } from "@styled-icons/material-rounded/ClearAll";
 import { ThreeDots } from "@styled-icons/bootstrap/ThreeDots";
 
