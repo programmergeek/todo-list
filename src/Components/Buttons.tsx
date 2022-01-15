@@ -59,7 +59,7 @@ export const OptionsButton: React.FC = () => {
         style={{ display: showMenu ? "flex" : "none" }}
         onMouseLeave={() => toggleMenu(false)}
       >
-        <button className="font-sans-serif w-20 px-4 py-3 hover:bg-neutral-800 rounded-b-lg text-white">
+        <button className="font-sans-serif w-20 px-4 py-3 hover:bg-neutral-800 rounded-lg text-white">
           Delete
         </button>
       </div>
