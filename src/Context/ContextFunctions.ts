@@ -1,5 +1,7 @@
 export const addToList = (val: string, list: string[]) => {
-  list.push(val);
+  if (val.length > 0) {
+    list.push(val);
+  }
   return list;
 };
 
