@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AddIcon, ClearIcon, DeleteIcon, EditIcon, OptionsIcon } from ".";
+import { AddIcon, ClearIcon, DeleteIcon, OptionsIcon } from ".";
 
 type ButtonProps = {
   onClick: () => void;
@@ -37,14 +37,6 @@ export const DeleteButton: React.FC<ButtonProps> = ({ ...props }) => {
   );
 };
 
-export const EditButton: React.FC<ButtonProps> = ({ ...props }) => {
-  return (
-    <Button title="Edit" onClick={() => props.onClick()}>
-      <EditIcon />
-    </Button>
-  );
-};
-
 export const ClearAllButton: React.FC<ButtonProps> = ({ ...props }) => {
   return (
     <Button title="Clear" onClick={() => props.onClick()}>
@@ -67,9 +59,6 @@ export const OptionsButton: React.FC = () => {
         style={{ display: showMenu ? "flex" : "none" }}
         onMouseLeave={() => toggleMenu(false)}
       >
-        <button className="font-sans-serif w-20 px-4 py-3 hover:bg-neutral-800 rounded-t-lg text-white">
-          Edit
-        </button>
         <button className="font-sans-serif w-20 px-4 py-3 hover:bg-neutral-800 rounded-b-lg text-white">
           Delete
         </button>

@@ -25,14 +25,6 @@ export const DeleteIcon: React.FC = () => {
   );
 };
 
-export const EditIcon: React.FC = () => {
-  return (
-    <Icon>
-      <Edit />
-    </Icon>
-  );
-};
-
 export const ClearIcon: React.FC = () => {
   return (
     <Icon>
