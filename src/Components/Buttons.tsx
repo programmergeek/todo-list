@@ -55,7 +55,7 @@ export const OptionsButton: React.FC = () => {
         </div>
       </Button>
       <div
-        className="absolute -z-10 top-16 flex flex-col -right-8 rounded-lg bg-black"
+        className="absolute z-10 top-16 flex flex-col -right-8 rounded-lg bg-black"
         style={{ display: showMenu ? "flex" : "none" }}
         onMouseLeave={() => toggleMenu(false)}
       >
