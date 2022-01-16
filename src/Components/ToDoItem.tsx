@@ -1,12 +1,14 @@
-import React from "react";
-import { CheckField, OptionsButton } from ".";
+import React, { Dispatch, SetStateAction } from "react";
+import { CheckField, DeleteButton } from ".";
+import { deleteFromList } from "../Context";
 
 type ToDoItemProps = {
   value: string;
+  updateList: Dispatch<SetStateAction<string[]>>;
 };
 
 export const ToDoItem: React.FC<ToDoItemProps> = ({ ...props }) => {
-  return <ToDoRecord value={props.value} />;
+  return <ToDoRecord value={props.value} updateList={props.updateList} />;
 };
 
 const ToDoRecord: React.FC<ToDoItemProps> = ({ ...props }) => {
@@ -18,7 +20,13 @@ const ToDoRecord: React.FC<ToDoItemProps> = ({ ...props }) => {
         </div>
       </div>
       <div className="absolute sm:relative right-[13vw] top-1.5 sm:flex sm:right-0 sm:top-0">
-        <OptionsButton />
+        <DeleteButton
+          onClick={() => {
+            props.updateList((lst) => {
+              return deleteFromList(props.value, lst);
+            });
+          }}
+        />
       </div>
     </div>
   );

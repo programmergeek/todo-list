@@ -10,7 +10,7 @@ export const List = () => {
       {context.list.map((val, key) => {
         return (
           <div key={key} className="mt-2">
-            <ToDoItem value={val} />
+            <ToDoItem value={val} updateList={context.updateList} />
           </div>
         );
       })}

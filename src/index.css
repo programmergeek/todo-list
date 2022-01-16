@@ -26,8 +26,9 @@ button[title]:hover::after{
   background-color: black;
   color: white;
   border-radius: 2px;
-  top: 50px;
+  top: 60px;
   left: 5px;
+  z-index: 10;
 }
 
 .check-field {
